@@ -1,0 +1,39 @@
+
+<html>
+  <head>
+    <title>kahoot-bot</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+  </head>
+  <body onload="onload()">
+    <div>
+      <h1>kahoot-bot</h1>
+      <ol>
+        <li>Inserisci il pin della stanza
+        <li>Inserisci / modifica i numeri di matricola da simulare (se ne devi rimuovere ricarica la pagina)
+        <li>Premi Init
+        <li>Quando il quiz parte premi play
+        <li>Quando il quiz finisce premi stop
+    </div>
+    <div>
+      <input id="pin" placeholder="Pin"/>
+      <div id="numbersContainer">
+        <h3>Matricole</h3>
+        <button onclick="addNumberInput()">Aggiungi matricola</button><br><br>
+      </div>
+      <br>
+      <button onclick="init()">Init</button>
+    </div>
+    <br>
+    <div>
+      <h4 id="botRunningMessage"></h4>
+      <button onclick="play()">Play</button>
+      <button onclick="stop()">Stop</button>
+    </div>
+    <br>
+    <div>
+      <h2 id="messageTitle"></h2>
+      <h4 id="messageBody"></h4>
+    </div>
+  </body>
+</html>
